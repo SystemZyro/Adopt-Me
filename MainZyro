@@ -1,1 +1,9 @@
+-- Execute main scripts
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemZyro/Adopt-Me/refs/heads/main/AdmSetup.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemZyro/Adopt-Me/refs/heads/main/Loader"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemZyro/Adopt-Me/refs/heads/main/ServerEnv"))()
 
+-- Delay 3 seconds before executing BugChecker
+task.delay(3, function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemZyro/Adopt-Me/refs/heads/main/BugChecker"))()
+end)
